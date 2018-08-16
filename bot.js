@@ -226,7 +226,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", message => {
- if (message.content === `${prefix}`) {
+ if (message.content === `help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
@@ -244,5 +244,15 @@ $2queue ⇏ لمعرفة قآئمة التشغيل
     
    }
    }); 
+
+
+
+client.on('ready', () => {
+  client.user.setGame(`2help لخواص البوت `,'https://www.twitch.');
+});
+
+
+
+
 
 client.login(process.env.BOT_TOKEN);
