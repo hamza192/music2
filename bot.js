@@ -267,5 +267,4 @@ message.member.voiceChannel.join();
 
 
 
-
 client.login(process.env.BOT_TOKEN);
