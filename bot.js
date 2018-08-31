@@ -255,4 +255,17 @@ client.on('ready', () => {
 
 
 
+client.on('message', message => {
+ if(message.content.startsWith(prefix + "تعال")) {
+message.member.voiceChannel.join();
+}
+});
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
